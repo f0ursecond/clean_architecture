@@ -17,10 +17,13 @@ class _homePageState extends State<homePage> {
         elevation: 0,
         backgroundColor: kPrimaryColor,
         leading: const Icon(Icons.menu),
-        actions: const [
+        actions: [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
-            child: Icon(Icons.notifications),
+            child: IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.notifications),
+            ),
           ),
         ],
       ),

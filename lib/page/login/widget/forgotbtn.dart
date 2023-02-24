@@ -27,7 +27,11 @@ class forgotBtn extends StatelessWidget {
             child: Text(
               'Lupa Password',
               style: GoogleFonts.rubik(
-                  color: kPrimaryColor, decoration: TextDecoration.underline),
+                color: kPrimaryColor,
+                decoration: TextDecoration.underline,
+                fontWeight: FontWeight.w500,
+                letterSpacing: 0.2,
+              ),
             ),
           ),
         ],
