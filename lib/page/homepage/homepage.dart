@@ -1,4 +1,5 @@
 import 'package:clean_architecture/constant.dart';
+import 'package:clean_architecture/page/notifpage/notifpage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,9 +20,16 @@ class _homePageState extends State<homePage> {
         leading: const Icon(Icons.menu),
         actions: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => notifPage(),
+                  ),
+                );
+              },
               icon: const Icon(Icons.notifications),
             ),
           ),
