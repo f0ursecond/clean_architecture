@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AlertContainer extends StatelessWidget {
   const AlertContainer({
@@ -35,14 +36,20 @@ class njirContainer extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        const Text(
-                            'Jatuh Tempo Pembayaran Iuran Wajib\nuntuk bulan Mei 2021 pada tanggal\n05/05/2021.'),
+                        Text(
+                          'Jatuh Tempo Pembayaran Iuran Wajib\nuntuk bulan Mei 2021 pada tanggal\n05/05/2021.',
+                          style: GoogleFonts.rubik(
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14,
+                            color: const Color(0xFF4F4F4F),
+                          ),
+                        ),
                         const SizedBox(height: 12),
                         Transform(
                           transform: Matrix4.translationValues(130, 0, 0),
                           child: const Text(
                             '1 Hari yang lalu',
-                            style: TextStyle(color: Colors.grey),
+                            style: TextStyle(color: Colors.grey, fontSize: 11),
                           ),
                         ),
                       ],

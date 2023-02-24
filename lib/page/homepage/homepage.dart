@@ -1,4 +1,5 @@
 import 'package:clean_architecture/constant.dart';
+import 'package:clean_architecture/page/historytrx/historytrx.dart';
 import 'package:clean_architecture/page/notifpage/notifpage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,7 +18,17 @@ class _homePageState extends State<homePage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: kPrimaryColor,
-        leading: const Icon(Icons.menu),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const HistoryTrx(),
+              ),
+            );
+          },
+          icon: const Icon(Icons.menu),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
