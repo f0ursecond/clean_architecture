@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-Widget appBar(String text) {
+Widget appBar(String text, BuildContext context) {
   return AppBar(
     elevation: 0,
     backgroundColor: kPrimaryColor,
@@ -16,5 +16,12 @@ Widget appBar(String text) {
       ),
     ),
     centerTitle: true,
+    leading: IconButton(
+      onPressed: () => Navigator.of(context).pop(),
+      icon: Icon(
+        Icons.arrow_back_ios_new,
+        size: 18,
+      ),
+    ),
   );
 }

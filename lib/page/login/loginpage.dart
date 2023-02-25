@@ -1,4 +1,3 @@
-import 'package:clean_architecture/constant.dart';
 import 'package:clean_architecture/page/homepage/homepage.dart';
 import 'package:clean_architecture/widget_global/button.dart';
 import 'package:clean_architecture/widget_global/emailinput.dart';
@@ -7,7 +6,6 @@ import 'package:clean_architecture/widget_global/pwinput.dart';
 import 'package:clean_architecture/widget_global/welcome.dart';
 import 'package:clean_architecture/widget_global/logo.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class loginPage extends StatefulWidget {
   const loginPage({super.key});

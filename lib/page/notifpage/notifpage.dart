@@ -14,8 +14,8 @@ class _notifPageState extends State<notifPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        child: appBar("Pemberitahuan"),
         preferredSize: const Size.fromHeight(56),
+        child: appBar("Pemberitahuan", context),
       ),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.center,

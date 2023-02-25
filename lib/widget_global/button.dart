@@ -17,15 +17,16 @@ class button extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: TextButton(
-          onPressed: press,
-          child: Text(
-            text,
-            style: GoogleFonts.rubik(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
-            ),
-          )),
+        onPressed: press,
+        child: Text(
+          text,
+          style: GoogleFonts.rubik(
+            color: Colors.white,
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+      ),
     );
   }
 }

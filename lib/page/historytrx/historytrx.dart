@@ -17,7 +17,7 @@ class _HistoryTrxState extends State<HistoryTrx> {
       length: 3,
       child: Scaffold(
         appBar: PreferredSize(
-          child: appBar("Pemberitahuan"),
+          child: appBar("Pemberitahuan", context),
           preferredSize: const Size.fromHeight(56),
         ),
         body: Column(
